@@ -8,8 +8,16 @@
     "start": "next start"
   },
   "dependencies": {
+    "cssnano": "^4.1.10",
+    "html-table-to-json": "^1.0.0",
     "next": "10.0.9",
+    "node-fetch": "^2.6.1",
     "react": "17.0.1",
     "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.8",
+    "tailwindcss": "^2.0.4"
   }
 }
