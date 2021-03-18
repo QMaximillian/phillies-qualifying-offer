@@ -1,3 +1,11 @@
+### Packages Used
+
+- [node-fetch]
+- [html-table-to-json]
+- [next/error-example-github]
+- [remove-non-alphanumeric-characters]
+- [check-if-input-string-contains-a-number]
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -32,3 +40,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+### Links
+
+[node-fetch]: https://www.npmjs.com/package/node-fetch#loading-and-configuring-the-module
+[html-table-to-json]: https://www.npmjs.com/package/html-table-to-json
+[next/error-example-github]: https://github.com/vercel/next.js/issues/1134
+[remove-non-alphanumeric-characters]: https://stackoverflow.com/questions/1862130/strip-all-non-numeric-characters-from-string-in-javascript
+[check-if-input-string-contains-a-number]: https://stackoverflow.com/questions/5778020/check-whether-an-input-string-contains-a-number-in-javascript

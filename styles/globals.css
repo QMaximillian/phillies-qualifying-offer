@@ -4,6 +4,6 @@
 
 @layer base {
   div#__next {
-    @apply h-screen w-screen bg-phillies-powder-blue-retro;
+    @apply h-screen w-screen;
   }
 }
