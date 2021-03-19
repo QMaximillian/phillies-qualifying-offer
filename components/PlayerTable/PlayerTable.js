@@ -29,7 +29,7 @@ function PlayerTable({ columns, data }) {
           <thead className="bg-phillies-po,wder-blue-retro">
             {headerGroups.map((headerGroup) => (
               <tr
-                className="h-16 text-xl 2xl:text-3xl underline sticky top-0 bg-phillies-powder-blue-retro"
+                className="h-16 text-base 2xl:text-3xl underline sticky top-0 bg-phillies-powder-blue-retro"
                 {...headerGroup.getHeaderGroupProps()}
               >
                 {headerGroup.headers.map((column) => (
@@ -55,7 +55,7 @@ function PlayerTable({ columns, data }) {
               prepareRow(row);
               return (
                 <tr
-                  className="odd:bg-white even:bg-gray-300 h-16 font-semibold text-xl 2xl:text-2xl"
+                  className="odd:bg-white even:bg-gray-300 h-16 font-semibold md:text-xl 2xl:text-2xl"
                   {...row.getRowProps()}
                 >
                   {row.cells.map((cell) => {

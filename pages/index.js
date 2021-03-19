@@ -61,17 +61,16 @@ export default function Home(props) {
   return (
     <>
       <Head>
-        <title>Qualifying Offer Application</title>
+        <title>Current Season Qualifying Offer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainLayout>
-        <div className="bg-phillies-powder-blue-retro sticky top-0 p-2">
-          <div className="flex justify-between">
-            <div className="flex w-full h-24 lg:w-auto bg-phillies-powder-blue-retro min-w-min">
-              <span className="self-center text-4xl rounded-lg px-4 py-2 mr-6 text-center bg-phillies-maroon-retro text-white">
-                <div>Qualifying</div>
-                <div>Offer</div>
-              </span>
+        <div className="bg-phillies-powder-blue-retro sticky top-0 md:p-2 h-1/4">
+          <div className="flex md:justify-between flex-col md:flex-row">
+            <div className="flex w-full h-24 lg:w-auto bg-phillies-powder-blue-retro min-w-min flex-col md:flex-row">
+              <div className="flex text-base w-full h-full md:text-4xl rounded-lg px-4 py-2 md:mr-6 text-center bg-phillies-maroon-retro text-white">
+                <div className="font-bold m-auto">Qualifying Offer</div>
+              </div>
               <QualifyingOfferBanner
                 qualifyingOffer={props.qualifyingOfferAmount}
               />
