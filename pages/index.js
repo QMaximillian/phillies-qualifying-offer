@@ -77,7 +77,7 @@ export default function Home(props) {
             </div>
             <div className="object-fit hidden md:flex">
               <Image
-                src="/../public/images/phillies-powder-blue-logo.png"
+                src="/phillies-powder-blue-logo.png"
                 width={160}
                 height={"6rem"}
               />
