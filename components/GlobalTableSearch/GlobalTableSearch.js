@@ -7,19 +7,20 @@ function GlobalTableSearch({ filter, setFilter }) {
 
   const onChange = useAsyncDebounce((value) => {
     setFilter(value);
-  }, 300);
+  }, 400);
 
   return (
-    <span className="h-full w-full">
-      Search
+    <div className="text-2xl  h-16 w-1/3 bg-phillies-maroon-retro flex justify-center items-center rounded-lg m-auto">
+      <span className="text-white mr-2">Search: </span>
       <input
+        className="text-center rounded-lg uppercase"
         value={value}
         onChange={(event) => {
           setValue(event.target.value);
           onChange(event.target.value);
         }}
       />
-    </span>
+    </div>
   );
 }
 

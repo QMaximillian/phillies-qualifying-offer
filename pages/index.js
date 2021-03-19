@@ -84,9 +84,6 @@ export default function Home(props) {
               />
             </div>
           </div>
-          <div className="h-10 w-full border-2 border-indigo-500 mt-2 lg:w-1/2 lg:h-20 m-auto">
-            {/* <GlobalTableSearch /> */}
-          </div>
         </div>
         <div className="w-full border-2 border-indigo-500 h-full mt-2 overflow-scroll relative">
           <PlayerTable columns={columns} data={data} />
