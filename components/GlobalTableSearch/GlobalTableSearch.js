@@ -4,9 +4,9 @@ import { useAsyncDebounce } from "react-table";
 function GlobalTableSearch({ filter, setFilter }) {
   const [value, setValue] = useState(filter);
 
-  const onChange = useAsyncDebounce((value) => {
-    setFilter(value);
-  }, 300);
+  // const onChange = useAsyncDebounce((value) => {
+  //   setFilter(value);
+  // }, 300);
 
   return (
     <div className="sm:text-2xl h-16 bg-phillies-maroon-retro min-w-full inline-flex justify-center items-center rounded-lg">
@@ -16,7 +16,7 @@ function GlobalTableSearch({ filter, setFilter }) {
         value={value}
         onChange={(event) => {
           setValue(event.target.value);
-          onChange(event.target.value);
+          setFilter(value);
         }}
       />
     </div>
