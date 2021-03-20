@@ -84,7 +84,7 @@ export default function Home(props) {
             </div>
           </div>
         </div>
-        <div className="w-full border-2 border-indigo-500 h-full mt-2 overflow-scroll relative">
+        <div className="w-full border-2 border-black rounded-md h-full mt-2 overflow-scroll relative">
           <PlayerTable columns={columns} data={data} />
         </div>
       </MainLayout>
