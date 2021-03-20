@@ -4,10 +4,11 @@
 # Steps To Getting Up And Running
 
 1. Git clone or fork/clone project to your local computer
-2. Run `npm install`
-3. To run app in `development` mode run `npx next dev`
-4. To run app in `production` mode run `npx next build` and then `npx next start`
-5. Navigate to `https://localhost:3000` to interact with the app  
+2. In your terminal, run `cd phillies-qualifying-offer`
+3. Run `npm install`
+4. To run app in `development` mode run `npx next dev`
+5. To run app in `production` mode run `npx next build` and then `npx next start`
+6. Navigate to `https://localhost:3000` to interact with the app  
 
 ## Packages Used
 
