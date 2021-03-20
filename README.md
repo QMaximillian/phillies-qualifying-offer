@@ -19,8 +19,6 @@
 - [phillies-qualifying-offer-website]
 
 
-### Links
-
 [node-fetch]: https://www.npmjs.com/package/node-fetch#loading-and-configuring-the-module
 [html-table-to-json]: https://www.npmjs.com/package/html-table-to-json
 [next/error-example-github]: https://github.com/vercel/next.js/issues/1134
