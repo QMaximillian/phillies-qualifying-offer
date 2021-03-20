@@ -1,5 +1,4 @@
 import React from "react";
-import { PropTypes } from "prop-types";
 
 function MainLayout({ children }) {
   return (
@@ -8,9 +7,5 @@ function MainLayout({ children }) {
     </main>
   );
 }
-
-MainLayout.propTypes = {
-  children: PropTypes.node.isRequired,
-};
 
 export { MainLayout };

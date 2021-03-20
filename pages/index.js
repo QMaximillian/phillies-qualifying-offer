@@ -7,7 +7,6 @@ import HTMLTableToJson from "html-table-to-json";
 import MainLayout from "../layout/MainLayout";
 import QualifyingOfferBanner from "../components/QualifyingOfferBanner";
 import PlayerTable from "../components/PlayerTable";
-// import GlobalTableSearch from "../components/GlobalTableSearch";
 import { formatInUSCurrency } from "../utils/index";
 
 function fetchData() {
@@ -15,6 +14,8 @@ function fetchData() {
 }
 
 function parseHTMLTableToJSON(htmlTable) {
+  // HTML table to json: https://www.npmjs.com/package/html-table-to-json
+  // This package helps to convert an HTML table into an easier to use json object
   const tableToJSONObject = HTMLTableToJson.parse(htmlTable);
   const json = tableToJSONObject.results[0];
   return json;
@@ -34,7 +35,9 @@ function sanitizePlayerSalary(data) {
 }
 
 function convertToDollars(amount) {
+  // Check if an input string contains a number: https://stackoverflow.com/questions/5778020/check-whether-an-input-string-contains-a-number-in-javascript
   if (/\d/.test(amount)) {
+    // Remove non-numeric characters: https://stackoverflow.com/questions/1862130/strip-all-non-numeric-characters-from-string-in-javascript
     return Number(amount.replace(/\D/g, ""));
   } else {
     return 0;
@@ -42,6 +45,8 @@ function convertToDollars(amount) {
 }
 
 export default function Home(props) {
+  // next/error example github: https://github.com/vercel/next.js/issues/1134
+  // If we get any status code besides 200 OK form the server, error handle.
   if (props.statusCode) {
     return <Error statusCode={props.statusCode} />;
   }
@@ -51,6 +56,8 @@ export default function Home(props) {
       return {
         Header: header,
         accessor: header,
+        // React Table uses this value to let us format column values.
+        // This is why we must create the columns array on the client.
         Cell: ({ value }) =>
           header === "Salary" ? formatInUSCurrency(value) : value,
       };
@@ -92,7 +99,7 @@ export default function Home(props) {
   );
 }
 
-export async function getServerSideProps(context) {
+export async function getServerSideProps() {
   const res = await fetchData();
   const statusCode = res.statusCode > 200 ? res.statusCode : false;
   const htmlTable = await res.text();
@@ -106,9 +113,7 @@ export async function getServerSideProps(context) {
 
   return {
     props: {
-      data: players.sort((a, b) => b.Salary - a.Salary),
-      // .filter((player) => player.Salary !== 0),
-
+      data: players,
       columns: Object.keys(players[0]),
       statusCode,
       qualifyingOfferAmount,

@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { formatInUSCurrency } from "../../utils/index.js";
 
 function QualifyingOfferBanner({ qualifyingOffer }) {
@@ -11,9 +10,5 @@ function QualifyingOfferBanner({ qualifyingOffer }) {
     </div>
   );
 }
-
-QualifyingOfferBanner.PropTypes = {
-  qualifyingOffer: PropTypes.number.isRequired,
-};
 
 export { QualifyingOfferBanner };

@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import {
   useTable,
   useSortBy,
@@ -9,6 +8,11 @@ import {
 import { GlobalTableSearch } from "../GlobalTableSearch/GlobalTableSearch";
 
 function PlayerTable({ columns, data }) {
+  // React Table: https://react-table.tanstack.com/
+  // I used React Table to create a simple table design
+  // that would allow for simple sortin and a global search filter
+  // I also wanted to apply some simple styles to the table, and React Table
+  // is headless, making it easy to apply your own styles
   const {
     getTableProps,
     getTableBodyProps,
@@ -24,9 +28,9 @@ function PlayerTable({ columns, data }) {
   return (
     <>
       <GlobalTableSearch filter={globalFilter} setFilter={setGlobalFilter} />
-      <div className="h-full w-full overflow-scroll relative">
+      <div className="h-full w-full overflow-scroll relative bg-phillies-powder-blue-retro">
         <table className="w-full h-full" {...getTableProps()}>
-          <thead className="bg-phillies-po,wder-blue-retro">
+          <thead>
             {headerGroups.map((headerGroup) => (
               <tr
                 className="h-16 text-base 2xl:text-3xl underline sticky top-0 bg-phillies-powder-blue-retro"
@@ -77,6 +81,5 @@ function PlayerTable({ columns, data }) {
     </>
   );
 }
-PlayerTable.propTypes = {};
 
 export { PlayerTable };

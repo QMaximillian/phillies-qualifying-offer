@@ -5,8 +5,6 @@ module.exports = {
     extend: {
       colors: {
         phillies: {
-          "red-current": "#E81828",
-          "blue-current": "#002D72",
           "maroon-retro": "#6F263D",
           "powder-blue-retro": "#6BACE4",
         },

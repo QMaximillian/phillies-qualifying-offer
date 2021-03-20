@@ -1,3 +1,7 @@
+/*
+  TailwindCSS: https://tailwindcss.com/
+  I used TailwindCSS, a CSS utility library 
+*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
