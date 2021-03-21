@@ -11,11 +11,5 @@ div#__next {
   width: 100vw;
 }
 #table-container {
-  height: calc(100vh - 25%);
+  height: calc(75vh - 1rem);
 }
-/* @layer base {
-  div#__next {
-    @apply h-screen w-screen;
-  }
-
-} */
