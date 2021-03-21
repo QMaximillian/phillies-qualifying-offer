@@ -2,8 +2,6 @@ import * as React from "react";
 import Head from "next/head";
 import Error from "next/error";
 import Image from "next/image";
-import fetch from "node-fetch";
-import HTMLTableToJson from "html-table-to-json";
 import MainLayout from "../layout/MainLayout";
 import QualifyingOfferBanner from "../components/QualifyingOfferBanner";
 import PlayerTable from "../components/PlayerTable";

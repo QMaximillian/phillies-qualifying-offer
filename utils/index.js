@@ -1,3 +1,6 @@
+import fetch from "node-fetch";
+import HTMLTableToJson from "html-table-to-json";
+
 function formatInUSCurrency(offer) {
   return new Intl.NumberFormat("en-US", {
     style: "currency",
