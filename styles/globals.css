@@ -11,5 +11,11 @@ div#__next {
   width: 100vw;
 }
 #table-container {
-  height: calc(75vh - 1rem);
+  height: calc(68vh);
+}
+
+@media only screen and (min-width: 640px) {
+  #table-container {
+    height: calc(75vh);
+  }
 }

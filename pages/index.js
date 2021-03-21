@@ -42,22 +42,24 @@ export default function Home(props) {
       <MainLayout>
         <header className="bg-phillies-powder-blue-retro md:p-2">
           <div className="flex md:justify-between flex-col md:flex-row">
-            <div className="flex w-full h-24 lg:w-auto bg-phillies-powder-blue-retro min-w-min flex-col md:flex-row">
-              <div className="flex text-base w-full h-full md:text-4xl rounded-lg px-4 py-2 md:mr-6 text-center bg-phillies-maroon-retro text-white">
+            <div className="flex w-full h-24 bg-phillies-powder-blue-retro min-w-min flex-col md:flex-row">
+              <div className="flex text-base w-auto lg:w-2/5 h-full md:text-4xl rounded-lg px-4 py-2 md:mr-6 text-center bg-phillies-maroon-retro text-white">
                 <div className="font-bold m-auto">Qualifying Offer</div>
               </div>
               <QualifyingOfferBanner
                 qualifyingOffer={props.qualifyingOfferAmount}
               />
             </div>
-            <Image
-              src="/phillies-powder-blue-logo.png"
-              width={160}
-              height={"6rem"}
-            />
+            <div className="hidden md:flex">
+              <Image
+                src="/phillies-powder-blue-logo.png"
+                width={160}
+                height={"6rem"}
+              />
+            </div>
           </div>
         </header>
-        <section className="border-black rounded-md h-full mt-2">
+        <section className="rounded-md h-full mt-2">
           <PlayerTable columns={columns} data={data} />
         </section>
       </MainLayout>
