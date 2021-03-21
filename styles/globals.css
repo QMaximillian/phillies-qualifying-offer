@@ -6,8 +6,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+div#__next {
+  height: 100vh;
+  width: 100vw;
+}
+#table-container {
+  height: calc(100vh - 25%);
+}
+/* @layer base {
   div#__next {
     @apply h-screen w-screen;
   }
-}
+
+} */
