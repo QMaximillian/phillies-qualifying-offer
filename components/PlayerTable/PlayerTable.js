@@ -30,13 +30,13 @@ function PlayerTable({ columns, data }) {
       <GlobalTableSearch filter={globalFilter} setFilter={setGlobalFilter} />
       <div
         id="table-container"
-        className="h-full w-full overflow-scroll bg-phillies-powder-blue-retro rounded-b-lg"
+        className="h-full w-full overflow-scroll bg-phillies-powder-blue-retro rounded-b-lg relative"
       >
         <table className="w-full h-full" {...getTableProps()}>
           <thead>
             {headerGroups.map((headerGroup) => (
               <tr
-                className="h-16 text-base 2xl:text-3xl underline bg-phillies-powder-blue-retro"
+                className="h-16 text-base 2xl:text-3xl underline bg-phillies-powder-blue-retro top-0 sticky"
                 {...headerGroup.getHeaderGroupProps()}
               >
                 {headerGroup.headers.map((column) => (
