@@ -30,7 +30,7 @@ function PlayerTable({ columns, data }) {
       <GlobalTableSearch filter={globalFilter} setFilter={setGlobalFilter} />
       <div
         id="table-container"
-        className="h-full w-full overflow-scroll bg-phillies-powder-blue-retro"
+        className="h-full w-full overflow-scroll bg-phillies-powder-blue-retro rounded-b-lg"
       >
         <table className="w-full h-full" {...getTableProps()}>
           <thead>
@@ -46,6 +46,8 @@ function PlayerTable({ columns, data }) {
                   >
                     {column.render("Header")}
                     <span>
+                      {/* Clicking a column header will sort that cycle through sorting said column by 
+                      ASC, DESC, NONE. */}
                       {column.isSorted
                         ? column.isSortedDesc
                           ? "⬆️"
