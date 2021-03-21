@@ -40,7 +40,7 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainLayout>
-        <div className="bg-phillies-powder-blue-retro md:p-2">
+        <header className="bg-phillies-powder-blue-retro md:p-2">
           <div className="flex md:justify-between flex-col md:flex-row">
             <div className="flex w-full h-24 lg:w-auto bg-phillies-powder-blue-retro min-w-min flex-col md:flex-row">
               <div className="flex text-base w-full h-full md:text-4xl rounded-lg px-4 py-2 md:mr-6 text-center bg-phillies-maroon-retro text-white">
@@ -50,18 +50,16 @@ export default function Home(props) {
                 qualifyingOffer={props.qualifyingOfferAmount}
               />
             </div>
-            <div className="object-fit hidden md:flex">
-              <Image
-                src="/phillies-powder-blue-logo.png"
-                width={160}
-                height={"6rem"}
-              />
-            </div>
+            <Image
+              src="/phillies-powder-blue-logo.png"
+              width={160}
+              height={"6rem"}
+            />
           </div>
-        </div>
-        <div className="border-black rounded-md h-full mt-2">
+        </header>
+        <section className="border-black rounded-md h-full mt-2">
           <PlayerTable columns={columns} data={data} />
-        </div>
+        </section>
       </MainLayout>
     </>
   );
